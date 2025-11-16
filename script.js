@@ -126,7 +126,7 @@ const depoimentos = [
   },
 ];
 
-function mudarInfo(indiceAtual) {
+function mudarInfoDepoimentos(indiceAtual) {
   imagemDepoimento.src = depoimentos[indiceAtual].depoimentoImg;
   depoimentoTexto.textContent = depoimentos[indiceAtual].depoimentoTexto;
   depoimentoCliente.textContent = depoimentos[indiceAtual].depoimentoCliente;
@@ -136,6 +136,6 @@ seta.addEventListener("click", () => {
   if (indiceAtual >= depoimentos.length) {
     indiceAtual = 0;
   }
-  mudarInfo(indiceAtual);
+  mudarInfoDepoimentos(indiceAtual);
   indiceAtual++;
 });
