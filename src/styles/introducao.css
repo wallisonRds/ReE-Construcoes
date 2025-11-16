@@ -1,0 +1,61 @@
+.introducao {
+  width: 100%;
+  position: relative;
+}
+
+.introducao-bg img {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.introducao-overlay {
+  width: 100vw;
+}
+.introducao-overlay img {
+  height: 580px;
+  display: block;
+}
+
+.introducao-info {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    padding-top: 60px;
+    font: var(--poppins-lg);
+    color: var(--white);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  h1 span {
+    color: var(--primary-color);
+  }
+
+  p {
+    font: var(--roboto-lg);
+    max-width: 800px;
+    color: var(--content-text);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.whatsapp-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-fixed img {
+  width: 60px;
+  height: 60px;
+}

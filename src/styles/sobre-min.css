@@ -1,0 +1,54 @@
+#about {
+  background: linear-gradient(
+    to right,
+    var(--black) 0%,
+    var(--black) 45%,
+    var(--primary-color) 45%,
+    var(--primary-color) 100%
+  );
+
+  .container-about {
+    display: grid;
+    grid-template-columns: 6fr 7fr;
+
+    /* sobre-img */
+    .about-img {
+      padding-bottom: 100px;
+      padding-right: 40px;
+      text-align: end;
+    }
+
+    h2 {
+      text-align: start;
+      padding-top: 160px;
+      color: var(--white);
+      font: var(--poppins-md);
+      margin-bottom: 10px;
+      span {
+        color: var(--primary-color);
+      }
+    }
+  }
+  /* sobre-info */
+  .about-info {
+    /* background-color: var(--primary-color); */
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+
+    h1 {
+      font: var(--poppins-lg);
+      margin-bottom: 30px;
+      color: var(--button);
+      span {
+        color: var(--white);
+      }
+    }
+    p {
+      font: var(--roboto-lg);
+      color: var(--content-text-secondary);
+      max-width: 570px;
+    }
+  }
+}
