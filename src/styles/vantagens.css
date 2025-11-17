@@ -91,3 +91,33 @@
 .lista-vantagens li::marker {
   color: var(--primary-color);
 }
+
+@media (max-width: 430px) {
+  #vantagens {
+    padding-block: 60px;
+    .vantangens-titulo {
+      font-size: 2rem;
+    }
+  }
+
+  .container-vantangens-intro {
+    grid-template-columns: 1fr;
+
+    .vantagens-img img {
+      width: 100%;
+    }
+
+    .vantagens-intro p {
+      font-size: 0.875rem;
+      max-width: 300px;
+    }
+  }
+
+  #btn-terciary {
+    margin-inline: 40px;
+  }
+
+  .cards-vantagens {
+    gap: 40px;
+  }
+}

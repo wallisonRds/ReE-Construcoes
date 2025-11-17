@@ -66,3 +66,18 @@ details p {
   font: var(--roboto-s);
   color: var(--content-text);
 }
+
+@media (max-width: 430px) {
+  .perguntas-grid {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .perguntas-titulo {
+    font-size: 2rem;
+  }
+
+  summary {
+    font-size: 1rem;
+  }
+}

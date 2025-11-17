@@ -59,3 +59,43 @@
   width: 60px;
   height: 60px;
 }
+
+@media (max-width: 430px) {
+  .introducao {
+    height: 50vh;
+  }
+
+  .introducao-overlay img {
+    height: 100%;
+  }
+
+  .introducao-bg {
+    height: 100%;
+  }
+  .introducao-bg img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .introducao-info {
+    display: block;
+    height: 100%;
+  }
+
+  .introducao-info h1 {
+    font: var(--poppins-s);
+    font-weight: 600;
+    padding-top: 100px;
+  }
+  .br {
+    display: none;
+  }
+
+  .introducao-info p {
+    font: var(--roboto-sm);
+    padding-inline: 24px;
+    margin-bottom: 30px;
+  }
+  .whatsapp-fixed {
+    display: none;
+  }
+}

@@ -52,3 +52,10 @@ img {
   display: block;
   width: 100%;
 }
+
+@media (max-width: 430px) {
+  .container {
+    max-width: 342px;
+    padding: 0 24px;
+  }
+}
