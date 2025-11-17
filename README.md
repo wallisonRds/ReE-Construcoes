@@ -1,11 +1,12 @@
 # 🏗️ Projeto Website — R&E Construções
 
 Este é um site institucional desenvolvido para apresentar serviços de construção, reformas e manutenção.  
-O projeto foi criado utilizando **HTML, CSS e JavaScript**, com foco em organização e clareza visual.
+O projeto foi criado utilizando **HTML, CSS e JavaScript**, com foco em organização, responsividade e clareza visual.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
+
 - **HTML5**
 - **CSS3**
   - Arquitetura dividida em múltiplos arquivos (components, header, footer, serviços, perguntas, etc.)
@@ -29,21 +30,19 @@ src/
 │── index.html
 └── script.js
 
-
 ---
 
 ## 🧩 Funcionalidades
 
-- ✔️ Carrossel de serviços  
-- ✔️ Sessão de perguntas frequentes (FAQ) com `<details>`  
-- ✔️ Animações suaves  
-- ✔️ Layout organizado em múltiplos arquivos CSS  
+- ✔️ Carrossel de serviços
+- ✔️ Sessão de perguntas frequentes (FAQ) com `<details>`
+- ✔️ Animações suaves
+- ✔️ Layout organizado em múltiplos arquivos CSS
+- ✔️ Layout responsivo mobile-first
 
 ---
-
 
 ## 🛠️ Como rodar o projeto
 
 1. Baixe o repositório ou entre no link abaixo:
    https://ree-construcoes.vercel.app
-
