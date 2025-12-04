@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R&E Construções</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@1,18..144,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="primaria" class="header-nav container">
+        <a href="./">
+          <img
+            src="./src/assets/logo-principal.svg"
+            alt="Logo da R&E construções"
+          />
+        </a>
+        <ul class="header-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">Sobre min</a></li>
+          <li><a href="#servicos">Servicos</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#perguntas">Perguntas</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+
+        <div class="menu-hamburguer">
+          <input type="checkbox" id="menu-check" />
+          <label for="menu-check">
+            <img src="./src/assets/icons/menu-black.svg" alt="Menu" />
+          </label>
+
+          <div class="header-menu-hamburguer">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre min</a></li>
+              <li><a href="#servicos">Servicos</a></li>
+              <li><a href="#vantagens">Vantagens</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+              <li><a href="#perguntas">Perguntas</a></li>
+              <li><a href="./contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="contato">
+      <h1>Vamos conversar <span>?</span></h1>
+      <div class="container">
+        <div class="contato-grid">
+          <div class="contato-info">
+            <h2>
+              Entre em contato<br />
+              conosco
+            </h2>
+            <div class="info">
+              <img
+                src="./src/assets/icons/logos_whatsapp-icon.svg"
+                alt="logo do whatsapp"
+              />
+              <div class="whats-info">
+                <p>WhatsApp</p>
+                <p>(11) 9 9999-9999</p>
+              </div>
+              <img
+                class="seta"
+                src="./src/assets/icons/seta.svg"
+                alt="imagem de uma seta"
+              />
+            </div>
+            <div class="info">
+              <img
+                src="./src/assets/icons/logos_google-gmail.svg"
+                alt="icone do gmail"
+              />
+              <div class="email-info">
+                <p>E-mail</p>
+                <p>contato@hotmail.com</p>
+              </div>
+              <img
+                class="seta"
+                src="./src/assets/icons/seta.svg"
+                alt="imagem de uma seta"
+              />
+            </div>
+            <div class="info">
+              <img
+                src="./src/assets/icons/icon-park_local.svg"
+                alt="icone de localização "
+              />
+              <div class="atendimento-info">
+                <p>Atendimento</p>
+                <p>São Paulo, SP</p>
+              </div>
+              <img
+                class="seta"
+                src="./src/assets/icons/seta.svg"
+                alt="imagem de uma seta"
+              />
+            </div>
+            <div class="info-horario">
+              <div class="atendimento-horario">
+                <p>horário de atendimento</p>
+                <div class="horario">
+                  <p>Segunda à Sexta</p>
+                  <p>08 às 22h</p>
+                </div>
+                <div class="horario">
+                  <p>Sabado e Domingo</p>
+                  <p>08 às 15h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contato-forms">
+            <h2>Solicite seu orçamento</h2>
+            <div class="forms">
+              <div class="input-wrapper">
+                <label for="nome">Nome completo</label>
+                <input
+                  id="nome"
+                  type="text"
+                  placeholder="Digite seu nome completo"
+                />
+              </div>
+            </div>
+            <div class="input-wrapper-contato">
+              <div class="input-wrapper">
+                <label for="telefone">Telefone/Whatsapp</label>
+                <input
+                  id="telefone"
+                  type="text"
+                  placeholder="Digite seu Telefone"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input id="email" type="text" placeholder="Digite seu E-mail" />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="servico">Tipo de serviço</label>
+              <input
+                id="servico"
+                type="text"
+                placeholder="Escolha seu serviço"
+              />
+            </div>
+
+            <div class="text-area-wrapper">
+              <label class="servico-label" for="servico"
+                >Descrição do serviço</label
+              >
+              <textarea
+                name="servicos"
+                id="servico"
+                rows="10"
+                placeholder="Breve descrição do serviço solicitado"
+              >
+              </textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+                Autorizo o contato por WhatsApp e e-mail *
+              </label>
+              <a href="./" class="btn-primary">enviar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- inicio footer -->
+    <footer id="footer">
+      <div class="container footer-grid">
+        <div class="logo-footer">
+          <img
+            src="./src/assets/logo-principal.svg"
+            alt="Logo R&E Construções"
+          />
+        </div>
+        <div class="contatos-footer">
+          <h2>contato</h2>
+          <p>Contato@hotmail.com</p>
+          <p>(11) 9 4924-2146</p>
+          <p>4924-2146</p>
+          <p>São Paulo - SP</p>
+        </div>
+        <div class="footer-links">
+          <h2>Links Rápidos</h2>
+          <ul class="footer-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre min</a></li>
+            <li><a href="#servicos">Servicos</a></li>
+            <li><a href="#vantagens">Vantagens</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#perguntas">Perguntas</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="direitos-autorais">
+        <p>© 2025 R&E Contruções e Reformas. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Carlos | Wallison</p>
+      </div>
+    </footer>
+    <!-- fim footer -->
+    <script src="./script.js"></script>
+  </body>
+</html>

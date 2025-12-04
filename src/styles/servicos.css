@@ -1,0 +1,155 @@
+#servicos {
+  background-color: var(--black);
+  padding: 80px;
+
+  .subtitulo {
+    font: var(--roboto-md);
+    color: var(--content-text);
+    text-align: center;
+  }
+
+  .titulo {
+    font: var(--poppins-lg);
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 80px;
+    span {
+      color: var(--primary-color);
+    }
+  }
+}
+
+/* servicos-carrossel */
+
+.servicos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  .servicos-carrossel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .servicos-imagem img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .carrossel {
+      display: flex;
+      overflow-x: scroll;
+      width: 580px;
+      height: 120px;
+      gap: 20px;
+    }
+  }
+}
+
+/* servicos-info */
+.servico-titulo {
+  font: var(--poppins-md);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.servico-titulo::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  background-image: linear-gradient(180deg, #ffbf00, #f2a50c);
+}
+
+.servico-subtitulo {
+  font: var(--roboto-md);
+  color: var(--content-text);
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.divisor {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--content-text);
+  margin-block: 40px;
+  margin-left: 15px;
+}
+
+.servico-info-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+
+  li {
+    font: var(--roboto-md-list);
+    color: var(--white);
+  }
+
+  li::marker {
+    color: var(--primary-color);
+  }
+}
+
+@media (max-width: 430px) {
+  #servicos {
+    padding: 80px 0px;
+
+    .titulo {
+      font-size: 2rem;
+    }
+    .subtitulo {
+      font-size: 0.875rem;
+    }
+  }
+  .servicos-container {
+    grid-template-columns: 1fr;
+    width: 430px;
+
+    .servicos-carrossel {
+      .servicos-imagem img {
+        width: 100%;
+      }
+
+      .carrossel {
+        width: 290px;
+        height: 60px;
+      }
+    }
+  }
+
+  .divisor {
+    width: 80%;
+  }
+
+  .servico-titulo {
+    font-size: 1.25rem;
+  }
+
+  .servico-titulo::before {
+    height: 20px;
+  }
+
+  .servico-subtitulo {
+    font-size: 0.875rem;
+  }
+
+  .servico-info-lista {
+    li {
+      font-size: 0.875rem;
+    }
+
+    li::marker {
+      color: var(--primary-color);
+    }
+  }
+
+  #btn-primary {
+    margin-inline: 50px;
+  }
+}

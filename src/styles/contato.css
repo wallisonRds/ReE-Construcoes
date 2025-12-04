@@ -1,0 +1,209 @@
+#contato {
+  background: var(--black);
+
+  h1 {
+    font: var(--poppins-md);
+    color: var(--white);
+    text-align: center;
+    padding-block: 60px;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  .seta {
+    width: 16px;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contato-info {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  h2 {
+    padding-block: 50px 10px;
+    text-align: center;
+    font: var(--roboto-md);
+  }
+}
+
+.info {
+  position: relative;
+  margin: 20px 30px;
+  background-color: var(--white);
+  padding: 20px 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid var(--white);
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.info:hover {
+  border-color: var(--primary-color);
+}
+
+.whats-info p {
+  font: var(--roboto-md);
+  font-size: 1rem;
+}
+
+.email-info p {
+  font: var(--roboto-md);
+  font-size: 1rem;
+}
+
+.atendimento-info p {
+  font: var(--roboto-md);
+  font-size: 1rem;
+}
+
+.info-horario {
+  margin: 30px;
+  background-color: var(--white);
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: 2px solid var(--white);
+}
+
+.info-horario:hover {
+  border-color: var(--primary-color);
+}
+
+.atendimento-horario p {
+  font: var(--roboto-md);
+  font-size: 1rem;
+}
+
+.atendimento-horario .horario {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--black);
+}
+
+.horario {
+  margin-block: 8px;
+}
+
+.contato-forms {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+
+  h2 {
+    padding-block: 50px;
+    text-align: center;
+    font: var(--roboto-md);
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+  width: 100%;
+
+  label {
+    font: var(--poppins-md);
+    font-size: 0.875rem;
+  }
+
+  input {
+    appearance: none;
+    border: 1px solid var(--white);
+    padding: 12px 20px;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: var(--primary-color);
+  }
+}
+
+.input-wrapper-contato {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.text-area-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  textarea {
+    appearance: none;
+    border: 1px solid var(--white);
+    padding: 12px 20px;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .servico-label {
+    font: var(--poppins-md);
+    font-size: 0.875rem;
+  }
+
+  textarea:focus {
+    border-color: var(--primary-color);
+  }
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font: var(--roboto-md);
+  font-size: 0.875rem;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* caixa */
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #999;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+/* quando estiver marcado */
+.checkbox input:checked + .checkmark {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
