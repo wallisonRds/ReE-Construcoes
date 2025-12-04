@@ -34,7 +34,7 @@
 }
 
 .footer-links h2 {
-  font: var(--roboto-footer);
+  font: var(--roboto-md);
 }
 
 .footer-list {
@@ -100,4 +100,5 @@
     }
   }
 }
+
 
